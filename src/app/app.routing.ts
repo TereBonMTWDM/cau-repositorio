@@ -8,7 +8,10 @@ import { ProfileComponent } from './profile/profile.component';
 import { SignupComponent } from './signup/signup.component';
 import { LandingComponent } from './landing/landing.component';
 import { LoginComponent } from './login/login.component';
+
+//Repositorio:
 import { RepositorioGroupComponent } from './pages/repositorio/repositorio-group/repositorio-group.component';
+import { RepositorioListComponent } from './pages/repositorio/repositorio-list/repositorio-list.component';
 
 const routes: Routes =[
     { path: 'home',             component: HomeComponent },
@@ -17,6 +20,7 @@ const routes: Routes =[
     { path: 'landing',          component: LandingComponent },
     { path: 'login',          component: LoginComponent },
     { path: 'repositorio',          component: RepositorioGroupComponent },
+    { path: 'listado',          component: RepositorioListComponent },
     { path: '', redirectTo: 'home', pathMatch: 'full' }
 ];
 
