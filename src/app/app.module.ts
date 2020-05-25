@@ -15,6 +15,10 @@ import { FooterComponent } from './shared/footer/footer.component';
 
 import { HomeModule } from './home/home.module';
 import { LoginComponent } from './login/login.component';
+import { RepositorioGroupComponent } from './pages/repositorio/repositorio-group/repositorio-group.component';
+
+//Components:
+
 
 @NgModule({
   declarations: [
@@ -24,7 +28,9 @@ import { LoginComponent } from './login/login.component';
     ProfileComponent,
     NavbarComponent,
     FooterComponent,
-    LoginComponent
+    LoginComponent,
+    RepositorioGroupComponent,
+    
   ],
   imports: [
     BrowserModule,
