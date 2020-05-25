@@ -33,24 +33,29 @@
           </a>
           <div class="dropdown-menu-xl dropdown-menu" >
             <div class="dropdown-menu-inner">
-              <a routerLinkActive="active" [routerLink]="['documentation/tutorial']" class="media d-flex align-items-center">
+              <a routerLinkActive="active" class="media d-flex align-items-center">
                 <div class="icon icon-shape bg-gradient-primary rounded-circle text-white">
+                  <i class="ni ni-button-pause"></i>
+                </div>
+                <div class="media-body ml-3">
+                  <h6 class="heading text-primary mb-md-1">Por Grupo</h6>
+                  <a [routerLink]="['/repositorio']"> 
+                    <p class="description d-none d-md-inline-block mb-0">Agrupación de los recursos educativos. Videos, lecciones, simuladores, infografías, presentaciones, y más.</p>
+                  </a>
+                </div>
+              </a>
+               <a routerLinkActive="active" class="media d-flex align-items-center">
+                <div class="icon icon-shape bg-gradient-success rounded-circle text-white">
                   <i class="ni ni-bullet-list-67"></i>
                 </div>
                 <div class="media-body ml-3">
                   <h6 class="heading text-primary mb-md-1">Listado</h6>
-                  <a [routerLink]="['/repositorio']"> <p class="description d-none d-md-inline-block mb-0">Agrupación de los recursos educativos. Videos, lecciones, simuladores, infografías, presentaciones, y más.</p></a>
+                  <a [routerLink]="['/listado']">
+                    <p class="description d-none d-md-inline-block mb-0">Puedes hacer búsquedas.</p>
+                  </a>
                 </div>
               </a>
-              <!-- <a routerLinkActive="active" [routerLink]="['documentation/colors']" class="media d-flex align-items-center">
-                <div class="icon icon-shape bg-gradient-success rounded-circle text-white">
-                  <i class="ni ni-palette"></i>
-                </div>
-                <div class="media-body ml-3">
-                  <h6 class="heading text-primary mb-md-1">Foundation</h6>
-                  <p class="description d-none d-md-inline-block mb-0">Learn more about colors, typography, icons and the grid system we used for Argon.</p>
-                </div>
-              </a>
+              <!--
               <a routerLinkActive="active" [routerLink]="['documentation/alerts']" class="media d-flex align-items-center">
                 <div class="icon icon-shape bg-gradient-warning rounded-circle text-white">
                   <i class="ni ni-ui-04"></i>
