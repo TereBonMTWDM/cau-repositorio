@@ -1,9 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
+import { MatPaginator } from '@angular/material/paginator';
 
-
-
-
+//Table:
 export interface PeriodicElement {
   name: string;
   position: number;
@@ -23,6 +22,8 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F'},
   {position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
 ];
+//End Table  
+
 
 @Component({
   selector: 'app-repositorio-list',
@@ -31,11 +32,12 @@ const ELEMENT_DATA: PeriodicElement[] = [
 })
 export class RepositorioListComponent implements OnInit {
 
-
-
   //Filter:
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = new MatTableDataSource(ELEMENT_DATA);
+  
+  //Pagination:
+  @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
 
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
@@ -44,10 +46,14 @@ export class RepositorioListComponent implements OnInit {
   //end Filter
 
 
+
+
   
   constructor() { }
 
   ngOnInit(): void {
+    this.dataSource.paginator = this.paginator;
+
   }
 
 }
