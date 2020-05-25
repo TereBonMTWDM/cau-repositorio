@@ -18,6 +18,8 @@ import { HomeModule } from './home/home.module';
 import { LoginComponent } from './login/login.component';
 import { RepositorioGroupComponent } from './pages/repositorio/repositorio-group/repositorio-group.component';
 import { RepositorioListComponent } from './pages/repositorio/repositorio-list/repositorio-list.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RepoList2Component } from './pages/repositorio/repo-list2/repo-list2.component';
 
 //Components:
 
@@ -33,6 +35,7 @@ import { RepositorioListComponent } from './pages/repositorio/repositorio-list/r
     LoginComponent,
     RepositorioGroupComponent,
     RepositorioListComponent,
+    RepoList2Component,
     
   ],
   imports: [
@@ -41,7 +44,8 @@ import { RepositorioListComponent } from './pages/repositorio/repositorio-list/r
     FormsModule,
     RouterModule,
     AppRoutingModule,
-    HomeModule
+    HomeModule,
+    BrowserAnimationsModule
   ],
   exports: [
     MaterialModule
