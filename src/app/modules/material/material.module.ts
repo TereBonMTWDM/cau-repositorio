@@ -6,6 +6,7 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
+import {MatChipsModule} from '@angular/material/chips';
 
 
 
@@ -16,7 +17,8 @@ import {MatIconModule} from '@angular/material/icon';
   ],
   exports: [
     MatTableModule, MatPaginatorModule,
-    MatInputModule, MatButtonModule, MatIconModule
+    MatInputModule, MatButtonModule, MatIconModule,
+    MatChipsModule
   ]
 })
 export class MaterialModule { }

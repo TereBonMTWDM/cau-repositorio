@@ -1,63 +1,46 @@
 [
     {
-      "position": 1,
-      "name": "Hydrogen",
-      "weight": 1.0079,
-      "symbol": "H",
-      "description": "Hydrogen is a chemical element with 'symbol' H and atomic number 1. With a standard atomic 'weight' of 1.008, hydrogen is the lightest element on the periodic table."
-    }, {
-      "position": 2,
-      "name": "Helium",
-      "weight": 4.0026,
-      "symbol": "He",
-      "description": "Hydrogen is a chemical element with 'symbol' H and atomic number 1. With a standard atomic 'weight' of 1.008, hydrogen is the lightest element on the periodic table."
-    }, {
-      "position": 3,
-      "name": "Lithium",
-      "weight": 6.941,
-      "symbol": "Li",
-      "description": "Hydrogen is a chemical element with 'symbol' H and atomic number 1. With a standard atomic 'weight' of 1.008, hydrogen is the lightest element on the periodic table."
-    }, {
-      "position": 4,
-      "name": "Beryllium",
-      "weight": 9.0122,
-      "symbol": "Be",
-      "description": "Hydrogen is a chemical element with 'symbol' H and atomic number 1. With a standard atomic 'weight' of 1.008, hydrogen is the lightest element on the periodic table."
-    }, {
-      "position": 5,
-      "name": "Boron",
-      "weight": 10.811,
-      "symbol": "B",
-      "description": "Hydrogen is a chemical element with 'symbol' H and atomic number 1. With a standard atomic 'weight' of 1.008, hydrogen is the lightest element on the periodic table."
-    }, {
-      "position": 6,
-      "name": "Carbon",
-      "weight": 12.0107,
-      "symbol": "C",
-      "description": "Hydrogen is a chemical element with 'symbol' H and atomic number 1. With a standard atomic 'weight' of 1.008, hydrogen is the lightest element on the periodic table."
-    }, {
-      "position": 7,
-      "name": "Nitrogen",
-      "weight": 14.0067,
-      "symbol": "N",
-      "description": "Hydrogen is a chemical element with 'symbol' H and atomic number 1. With a standard atomic 'weight' of 1.008, hydrogen is the lightest element on the periodic table."
-    }, {
-      "position": 8,
-      "name": "Oxygen",
-      "weight": 15.9994,
-      "symbol": "O",
-      "description": "Hydrogen is a chemical element with 'symbol' H and atomic number 1. With a standard atomic 'weight' of 1.008, hydrogen is the lightest element on the periodic table."
-    }, {
-      "position": 9,
-      "name": "Fluorine",
-      "weight": 18.9984,
-      "symbol": "F",
-      "description": "Hydrogen is a chemical element with 'symbol' H and atomic number 1. With a standard atomic 'weight' of 1.008, hydrogen is the lightest element on the periodic table."
-    }, {
-      "position": 10,
-      "name": "Neon",
-      "weight": 20.1797,
-      "symbol": "Ne",
-      "description": "Hydrogen is a chemical element with 'symbol' H and atomic number 1. With a standard atomic 'weight' of 1.008, hydrogen is the lightest element on the periodic table."
+      "id": 1,
+      "titulo": "El Principito",
+      "area": "Sociales y Humanidades",
+      "tipo": "PDF",
+      "palabras": "lectura, aviador, novela",
+      "autor": "Saint-Exupéry, Antoine",
+      "fecha": "26 de Mayo de 2021",
+      "url": "https://books.google.com.mx/books/about/El_Principito.html?id=uCqQDwAAQBAJ&printsec=frontcover&source=kp_read_button&redir_esc=y#v=onepage&q&f=false",
+      "descripcion": "El principito (en francés: Le Petit Prince) es una novela corta y la obra más famosa del escritor y aviador francés Antoine de Saint-Exupéry (1900-1944).1​ La novela fue publicada en abril de 1943, tanto en inglés como en francés, por la editorial estadounidense Reynal & Hitchcock, mientras que la editorial francesa Éditions Gallimard no pudo imprimir la obra hasta 1946, tras la liberación de Francia. Incluido entre los mejores libros del siglo XX en Francia, El principito se ha convertido en el libro escrito en francés más leído y más traducido. Así pues, cuenta con traducciones a más de doscientos cincuenta idiomas y dialectos, incluyendo el sistema de lectura braille.2​3​ La obra también se ha convertido en uno de los libros más vendidos de todos los tiempos, puesto que ha logrado vender más de 140 millones de ejemplares en todo el mundo, con más de un millón de ventas por año.4​5​Nota 1​ La novela fue traducida al español por Bonifacio del Carril y su primera publicación en dicho idioma fue realizada por la editorial argentina Emecé Editores en septiembre de 1951. Desde entonces, diversos traductores y editoriales han realizado sus propias versiones.7​"
+    },
+    {
+      "id": 2,
+      "titulo": "Matilda",
+      "area": "Ciencias económicas administrativas",
+      "tipo": "mp4",
+      "palabras": "Novela, Literatura infantil, Humor, Literatura fantástica",
+      "autor": "Roald Dahl",
+      "fecha": "26 de Mayo de 1988",
+      "url": "https://www.gandhi.com.mx/matilda-9786070115221",
+      "descripcion": "Matilda es el título de un libro escrito por Roald Dahl. Inicialmente, fue publicado en 1988 en Londres por Jonathan Cape, con ilustraciones de Quentin Blake. Se hizo una adaptación cinematográfica con el mismo nombre en 1996, dirigida por Danny DeVito, y un musical en 2010 a cargo de la Royal Shakespeare."
+    },
+    {
+      "id": 3,
+      "titulo": "Breve historia del tiempo",
+      "area": "Ciencias",
+      "tipo": "PDF",
+      "palabras": "Divulgación científica",
+      "autor": "Stephen Hawking",
+      "fecha": "1 de marzo de 1988",
+      "url": "https://books.google.com.mx/books/about/Historia_del_tiempo.html?id=I19gEY_Ju_YC&printsec=frontcover&source=kp_read_button&redir_esc=y#v=onepage&q&f=false",
+      "descripcion": "Breve historia del tiempo: del Big Bang a los agujeros negros es un libro de divulgación científica publicado en 1988 y escrito por el físico teórico, astrofísico y cosmólogo británico Stephen Hawking y prologado por Carl Sagan."
+    },
+    {
+      "id": 4,
+      "titulo": "Agujeros negros y tiempo curvo",
+      "area": "Ciencias",
+      "tipo": "mp3",
+      "palabras": "ficción, ciencia, espacio",
+      "autor": "Kip Thorne",
+      "fecha": "1994",
+      "url": "https://books.google.com.mx/books/about/Agujeros_negros_y_tiempo_curvo.html?id=FwNRDwAAQBAJ&printsec=frontcover&source=kp_read_button&redir_esc=y#v=onepage&q&f=false",
+      "descripcion": "Durante treinta años –nos dice Kip S. Thorne, profesor del California Institute of Tecnology- he participado en una gran búsqueda para comprender el legado dejado por Albert Einstein a las generaciones futuras..."
     }
 ]

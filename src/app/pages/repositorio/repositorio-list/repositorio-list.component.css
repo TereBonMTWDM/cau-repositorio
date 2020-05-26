@@ -52,6 +52,7 @@ tr.example-element-row:not(.example-expanded-row):active {
 
 .example-element-description {
   padding: 16px;
+  background-color: lightgoldenrodyellow;
 }
 
 .example-element-description-attribution {
@@ -62,4 +63,12 @@ tr.example-element-row:not(.example-expanded-row):active {
 /*clear me*/
 .example-form-field {
   width: 200px;
+}
+
+
+
+
+/**/
+.card-body {
+  background-color: whitesmoke;
 }

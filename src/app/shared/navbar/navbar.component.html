@@ -1,6 +1,6 @@
 <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom headroom--top headroom--pinned">
   <div class="container">
-    <a class="navbar-brand mr-lg-5" [routerLink]="['/home']">
+    <a class="navbar-brand mr-lg-5" [routerLink]="['/repositorio']">
       <!-- <img src="./assets/img/brand/argon-white.png"> -->
       CAU
     </a>
@@ -12,7 +12,7 @@
       <div class="navbar-collapse-header">
         <div class="row">
           <div class="col-6 collapse-brand">
-            <a [routerLink]="['/home']">
+            <a [routerLink]="['/repositorio']">
               <img src="./assets/img/brand/blue.png">
             </a>
           </div>
@@ -33,24 +33,24 @@
           </a>
           <div class="dropdown-menu-xl dropdown-menu" >
             <div class="dropdown-menu-inner">
-              <a routerLinkActive="active" class="media d-flex align-items-center">
+              <a routerLinkActive="active" [routerLink]="['/repositorio']" class="media d-flex align-items-center">
                 <div class="icon icon-shape bg-gradient-primary rounded-circle text-white">
                   <i class="ni ni-button-pause"></i>
                 </div>
                 <div class="media-body ml-3">
                   <h6 class="heading text-primary mb-md-1">Por Grupo</h6>
-                  <a [routerLink]="['/repositorio']"> 
+                  <a > 
                     <p class="description d-none d-md-inline-block mb-0">Agrupación de los recursos educativos. Videos, lecciones, simuladores, infografías, presentaciones, y más.</p>
                   </a>
                 </div>
               </a>
-               <a routerLinkActive="active" class="media d-flex align-items-center">
+               <a routerLinkActive="active" [routerLink]="['/listado/all']" class="media d-flex align-items-center">
                 <div class="icon icon-shape bg-gradient-success rounded-circle text-white">
                   <i class="ni ni-bullet-list-67"></i>
                 </div>
                 <div class="media-body ml-3">
                   <h6 class="heading text-primary mb-md-1">Listado</h6>
-                  <a [routerLink]="['/listado']">
+                  <a >
                     <p class="description d-none d-md-inline-block mb-0">Puedes hacer búsquedas.</p>
                   </a>
                 </div>
@@ -68,7 +68,7 @@
             </div>
           </div>
         </li>
-        <li class="nav-item dropdown">
+        <!-- <li class="nav-item dropdown">
           <a class="nav-link no-caret" data-toggle="dropdown" role="button">
             <i class="ni ni-collection d-lg-none"></i>
             <span class="nav-link-inner--text">Examples</span>
@@ -80,7 +80,7 @@
             <a [routerLink]="['/register']" class="dropdown-item">Register</a>
             <a [routerLink]="['/repositorio']" class="dropdown-item">Repositorio</a>
           </div>
-        </li>
+        </li> -->
       </ul>
       <!-- <ul class="navbar-nav align-items-lg-center ml-lg-auto">
         <li class="nav-item">

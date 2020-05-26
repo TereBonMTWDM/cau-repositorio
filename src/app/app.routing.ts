@@ -20,8 +20,10 @@ const routes: Routes =[
     { path: 'landing',          component: LandingComponent },
     { path: 'login',          component: LoginComponent },
     { path: 'repositorio',          component: RepositorioGroupComponent },
-    { path: 'listado',          component: RepositorioListComponent },
-    { path: '', redirectTo: 'home', pathMatch: 'full' }
+    //{ path: 'listado',          component: RepositorioListComponent },
+    { path: 'listado/:tipo',          component: RepositorioListComponent },
+    //{ path: '', redirectTo: 'home', pathMatch: 'full' }
+    { path: '', redirectTo: 'repositorio', pathMatch: 'full' }
 ];
 
 @NgModule({
