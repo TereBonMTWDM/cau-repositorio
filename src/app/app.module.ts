@@ -5,6 +5,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app.routing';
 import { MaterialModule } from './modules/material/material.module';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { SignupComponent } from './signup/signup.component';
@@ -19,7 +20,7 @@ import { LoginComponent } from './login/login.component';
 import { RepositorioGroupComponent } from './pages/repositorio/repositorio-group/repositorio-group.component';
 import { RepositorioListComponent } from './pages/repositorio/repositorio-list/repositorio-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { RepoList2Component } from './pages/repositorio/repo-list2/repo-list2.component';
+import { RepoListTestComponent } from './pages/repositorio/repo-list-test/repo-list-test.component';
 
 //Components:
 
@@ -35,8 +36,7 @@ import { RepoList2Component } from './pages/repositorio/repo-list2/repo-list2.co
     LoginComponent,
     RepositorioGroupComponent,
     RepositorioListComponent,
-    RepoList2Component,
-    
+    RepoListTestComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,7 +45,8 @@ import { RepoList2Component } from './pages/repositorio/repo-list2/repo-list2.co
     RouterModule,
     AppRoutingModule,
     HomeModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
   exports: [
     MaterialModule
