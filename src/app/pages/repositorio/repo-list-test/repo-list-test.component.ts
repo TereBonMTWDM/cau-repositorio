@@ -1,13 +1,12 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { MatTableDataSource } from '@angular/material/table';
+import { Component, OnInit } from '@angular/core';
 import {animate, state, style, transition, trigger} from '@angular/animations';
-import { MatPaginator } from '@angular/material/paginator';
+import {MatTableDataSource} from '@angular/material/table';
 
 
 @Component({
-  selector: 'app-repositorio-list',
-  templateUrl: './repositorio-list.component.html',
-  styleUrls: ['./repositorio-list.component.css'],
+  selector: 'app-repo-list-test',
+  templateUrl: './repo-list-test.component.html',
+  styleUrls: ['./repo-list-test.component.css'],
   animations: [
     trigger('detailExpand', [
       state('collapsed', style({height: '0px', minHeight: '0'})),
@@ -16,15 +15,12 @@ import { MatPaginator } from '@angular/material/paginator';
     ]),
   ],
 })
-export class RepositorioListComponent implements OnInit {
-  value = '';
+export class RepoListTestComponent implements OnInit {
   columnsToDisplay: string[] = ['name', 'weight', 'symbol', 'position'];
   //dataSource = ELEMENT_DATA;
   dataSource = new MatTableDataSource(ELEMENT_DATA);
 
   expandedElement: PeriodicElement | null;
-  @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
-
 
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
@@ -34,13 +30,6 @@ export class RepositorioListComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.dataSource.paginator = this.paginator;
-
-  }
-
-  onValue(){
-    this.value = '';
-    this.dataSource.filter = '';
   }
 
 }
