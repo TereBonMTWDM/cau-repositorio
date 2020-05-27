@@ -20,7 +20,6 @@ import { LoginComponent } from './login/login.component';
 import { RepositorioGroupComponent } from './pages/repositorio/repositorio-group/repositorio-group.component';
 import { RepositorioListComponent } from './pages/repositorio/repositorio-list/repositorio-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { RepoListTestComponent } from './pages/repositorio/repo-list-test/repo-list-test.component';
 
 //Components:
 
@@ -36,7 +35,6 @@ import { RepoListTestComponent } from './pages/repositorio/repo-list-test/repo-l
     LoginComponent,
     RepositorioGroupComponent,
     RepositorioListComponent,
-    RepoListTestComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,7 +44,8 @@ import { RepoListTestComponent } from './pages/repositorio/repo-list-test/repo-l
     AppRoutingModule,
     HomeModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    MaterialModule
   ],
   exports: [
     MaterialModule

@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
 import {animate, state, style, transition, trigger} from '@angular/animations';
 import { MatPaginator } from '@angular/material/paginator';
@@ -19,13 +19,14 @@ import { IfStmt } from '@angular/compiler';
     ]),
   ],
 })
-export class RepositorioListComponent implements OnInit {
+export class RepositorioListComponent implements OnInit, AfterViewInit {
   @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
 
   value = '';
   columnsToDisplay: string[] = ['id', 'titulo', 'area', 'tipo'];
   //columnsToDisplay2: string[] = ['id', 'TÍTULO', 'ÁREA', 'TIPO'];
-  dataSource:any;
+  //dataSource:any;
+  dataSource = new MatTableDataSource([]);
   expandedElement: any | null;
   objPalabras: any = {};
 
@@ -42,6 +43,9 @@ export class RepositorioListComponent implements OnInit {
         this.tipoArchivo = params.tipo;
       }
     })
+  }
+  ngAfterViewInit() {
+    this.dataSource.paginator = this.paginator;
   }
 
   ngOnInit(): void {
@@ -63,7 +67,7 @@ export class RepositorioListComponent implements OnInit {
       data = arrResult;
       
       this.dataSource = new MatTableDataSource(data);
-      this.dataSource.paginator = this.paginator;
+      //this.dataSource.paginator = this.paginator;
     })
 
   }

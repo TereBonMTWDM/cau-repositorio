@@ -13,7 +13,8 @@ import {MatChipsModule} from '@angular/material/chips';
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule
+    CommonModule,
+    MatPaginatorModule
   ],
   exports: [
     MatTableModule, MatPaginatorModule,
