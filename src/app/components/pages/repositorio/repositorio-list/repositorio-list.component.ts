@@ -4,7 +4,7 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
 import { MatPaginator } from '@angular/material/paginator';
 import { RepositorioService } from 'src/app/services/repositorio.service';
 import { ActivatedRoute } from '@angular/router';
-import { IfStmt } from '@angular/compiler';
+import { Repositorio } from 'src/app/models/repositorio';
 
 
 @Component({
@@ -34,6 +34,9 @@ export class RepositorioListComponent implements OnInit, AfterViewInit {
   video:any = ['mp4', 'wmv'];
   leccion:any = ['txt', 'xls', 'pdf', 'docx', 'pptx'];
 
+  repositorio: Repositorio[];
+  //repositorio: Repositorio;
+
   constructor(
     private repoSvc: RepositorioService,
     private router: ActivatedRoute
@@ -51,6 +54,8 @@ export class RepositorioListComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {
     var data:any;
     if(this.tipoArchivo == 'all'){ this.tipoArchivo = '';}
+
+    /*
     this.repoSvc.getRepo(this.tipoArchivo).subscribe((result: any) => {
       var arrResult = [];
       
@@ -69,6 +74,10 @@ export class RepositorioListComponent implements OnInit, AfterViewInit {
       this.dataSource = new MatTableDataSource(data);
       //this.dataSource.paginator = this.paginator;
     })
+    */
+
+    //this.saveRepositorio();
+    this.getRepositorios();
 
   }
 
@@ -80,6 +89,50 @@ export class RepositorioListComponent implements OnInit, AfterViewInit {
   onValue(){
     this.value = '';
     this.dataSource.filter = '';
+  }
+
+  /*
+  saveRepositorio(){
+    this.repoSvc.selectRepo = new Repositorio();
+
+    this.repositorio = {
+      id: 'aaa',
+      titulo: 'aaa',
+      area: 'aaa',
+      tipo: 'aaa',
+      palabras: 'aaa',
+      autor: 'aaa',
+      fecha: 'aaa',
+      url: 'aaa',
+      descripcion: 'aaa'
+    }
+
+    this.repoSvc.save(this.repositorio);
+  }
+  */
+
+  getRepositorios() {
+    //this.repoSvc.get();
+      
+    this.repoSvc.get()
+      .snapshotChanges()
+      .subscribe((result: any) => {
+        console.log(result);
+        if(!!result){
+          this.repositorio = [];
+          result.forEach((element:any) => {
+            let x = element.payload.toJSON();
+            x["id"] = element.key;
+
+            this.repositorio.push(x as Repositorio)
+
+            this.dataSource = new MatTableDataSource(this.repositorio);
+            
+          });
+        }
+
+
+      })
   }
 
 }
